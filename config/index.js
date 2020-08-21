@@ -8,6 +8,7 @@ const config = {
     dbPassword: process.env.DB_PASSWORD,
     dbHost: process.env.DB_HOST,
     dbName: process.env.DB_NAME,
+    cnn: process.env.DB_CNN,
     seedAuth: process.env.SEED_AUTENTICACION,
     expiration: process.env.EXPIRATION_TOKEN,
     lambdaEmail: process.env.AWS_LAMBDA_EMAIL,

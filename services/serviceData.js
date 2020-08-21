@@ -7,8 +7,8 @@ const e = require('express');
 const readline = require('readline');
 var Request = require("request");
 
-const ID = 'AKIAWJ7YDV23DQPYQK5G';
-const SECRET = '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';
+const ID = 'AKIAWJ7YDV23ELLZBKPP';
+const SECRET = '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';
 const BUCKET_NAME = 'emailerfiles';
 
 const { config } = require('../config');
@@ -20,7 +20,8 @@ const s3 = new AWS.S3({
 });
 
 class DataService {
-    /*  async getFileS3() {
+    /*
+    async getFileS3() {
         //var s3 = new AWS.S3({ apiVersion: '2006-03-01' });
         var params = { Bucket: 'emailerfiles', Key: 'data.txt' };
         var file = require('fs').createWriteStream('./files/data_.txt');
@@ -148,7 +149,7 @@ class DataService {
                                 arr: jsonArr
                             }
                         }
-         //               console.log("envia #: " + objectResult.data.arr.length);
+                        //console.log("envia #: " + objectResult.data.arr.length);
                         //Envio asincrono de emails
                     it.sendEmail(objectResult)
                     jsonArr = [];
@@ -184,10 +185,10 @@ class DataService {
                 console.error(error);
                 //reject(error);
             }
-     //       console.log("response server: " + JSON.stringify(response))
-     //       console.log("body server: " + JSON.stringify(body))
+            //console.log("response server: " + JSON.stringify(response))
+            //console.log("body server: " + JSON.stringify(body))
 
-       /*     
+            /*
                         var bodyP = JSON.parse(body);
 
                         var status = bodyP.statusCode;
@@ -198,11 +199,13 @@ class DataService {
                                 statusCode: status,
                                 totalEmails: totalEmails,
                                 tiempo: tiempo
-                            }*/
-                                                     //                   res.statusCode = status;
-                                            //res.totalEmails = totalEmails;
-                            //                res.tiempo = tiempo;
-                                        //console.log("response server: " + response)
+                            }
+                            /*
+                                            res.statusCode = status;
+                                            res.totalEmails = totalEmails;
+                                            res.tiempo = tiempo;
+                                            //*/
+            //console.log("response server: " + response)
             //console.log("response: " + res)
             //console.log("response: " + JSON.stringify(result))
 
