@@ -19,7 +19,7 @@ const dbConnection = async() => {
             useCreateIndex: true
         });
         console.log('DB'+DB_NAME);
-        console.log('DB Online....');
+        console.log('DB Online....'+MONGO_URI);
         
     } catch (error) {
         console.log(error);
